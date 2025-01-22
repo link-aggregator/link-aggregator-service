@@ -47,8 +47,8 @@
 
 		<!-- DATABASE DRIVERS -->
 		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
+			<groupId>org.xerial</groupId>
+			<artifactId>sqlite-jdbc</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
@@ -122,7 +122,7 @@
 						<configuration>
 							<commands>
 								<command>build --for java</command>
-								<command>deploy --to h2 --dry --out "${project.basedir}/src/main/resources/schema-h2.sql"</command>
+								<command>deploy --to sqlite --dry --out "${project.basedir}/src/main/resources/schema-sqlite.sql"</command>
 							</commands>
 						</configuration>
 					</execution>

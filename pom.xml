@@ -60,39 +60,39 @@
 
 	<build>
 		<plugins>
-			<!-- JAVA VERSION -->
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.13.0</version>
-				<configuration>
-					<release>${jdk.version}</release>
-					<encoding>UTF-8</encoding>
-				</configuration>
-				<executions>
-					<execution>
-						<id>default-compile</id>
-						<phase>none</phase>
-					</execution>
-					<execution>
-						<id>default-testCompile</id>
-						<phase>none</phase>
-					</execution>
-					<execution>
-						<id>java-compile</id>
-						<phase>compile</phase>
-						<goals>
-							<goal>compile</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>java-test-compile</id>
-						<phase>test-compile</phase>
-						<goals>
-							<goal>testCompile</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+<!-- JAVA COMPILER -->
+<plugin>
+	<artifactId>maven-compiler-plugin</artifactId>
+	<version>3.13.0</version>
+	<configuration>
+		<release>${jdk.version}</release>
+		<encoding>UTF-8</encoding>
+	</configuration>
+	<executions>
+		<execution>
+			<id>default-compile</id>
+			<phase>none</phase>
+		</execution>
+		<execution>
+			<id>default-testCompile</id>
+			<phase>none</phase>
+		</execution>
+		<execution>
+			<id>java-compile</id>
+			<phase>compile</phase>
+			<goals>
+				<goal>compile</goal>
+			</goals>
+		</execution>
+		<execution>
+			<id>java-test-compile</id>
+			<phase>test-compile</phase>
+			<goals>
+				<goal>testCompile</goal>
+			</goals>
+		</execution>
+	</executions>
+</plugin>
 
 			<!-- KOTLIN PLUGIN -->
 			<plugin>

@@ -6,4 +6,4 @@ The development of this application is done in steps where each step is accompan
 
 These are the steps:
 
-1. Create a simple Kotlin-based CAP Java microservice
+1. [Create a simple Kotlin-based CAP Java microservice](https://nutty-developer.tech/@bonk/statuses/01JJ7F7A60V33SYZAKJ2TMWNFW)
