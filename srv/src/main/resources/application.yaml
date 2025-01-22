@@ -1,6 +1,17 @@
 ---
 spring:
   config.activate.on-profile: default
-  sql.init.schema-locations: classpath:schema-h2.sql
-cds:
-  data-source.auto-config.enabled: false
+
+---
+# Local deployment
+spring:
+  config.activate.on-profile: local
+  sql.init:
+    mode: always
+    schema-locations: classpath:schema-sqlite.sql
+  datasource:
+    url: "jdbc:sqlite:file::memory:?cache=shared"
+    driver-class-name: org.sqlite.JDBC
+    hikari:
+      maximum-pool-size: 1
+      max-lifetime: 0

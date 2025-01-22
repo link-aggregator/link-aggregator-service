@@ -1,7 +1,7 @@
-package io.github.linkaggregator;
+package io.github.linkaggregator
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.SpringApplication
+import org.springframework.boot.autoconfigure.SpringBootApplication
 
 @SpringBootApplication
 open class LinkAggregatorApplication
